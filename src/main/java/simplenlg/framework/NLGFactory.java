@@ -252,6 +252,7 @@ public class NLGFactory {
 			// doLexiconLookUp(category, (String) word, wordElement);
 			// }
 			// wordElement = lexicon.getWord((String) word, category);
+			word = ((String) word).toLowerCase();
 			wordElement = lexicon.lookupWord((String) word, category);
 			if(PRONOUNS.contains(word)) {
 				setPronounFeatures(wordElement, (String) word);
